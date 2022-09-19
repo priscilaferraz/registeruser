@@ -1,0 +1,33 @@
+
+GET http://localhost:8080/api/user/
+
+###
+GET http://localhost:8080/api/user/1
+
+###
+DELETE http://localhost:8080/api/user/5
+Authorization: Basic admin@fiap.com.br administrador
+
+###
+
+POST http://localhost:8080/api/user
+Content-Type: application/json
+Authorization: Authorization: Basic admin@fiap.com.br administrador
+
+{
+    "name":"Marcus Souza",
+    "email":"marcus@fiap.com.br",
+    "password":"127"
+}
+
+###
+
+PUT http://localhost:8080/api/user/1
+Content-Type: application/json
+Authorization: Authorization: Basic admin@fiap.com.br administrador
+
+{
+    "name":"Amanda Souza",
+    "email":"amanda@fiap.com.br",
+    "password":"128"
+}
